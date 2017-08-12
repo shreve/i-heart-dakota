@@ -1,0 +1,299 @@
+body {
+  visibility: visible;
+  font-family: "skolar", Georgia, serif;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+}
+
+.wf-loading body {
+  visibility: hidden;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+h1, .top-secret {
+  font-family: "ratio";
+}
+
+h1 {
+  font-size: 3rem;
+  text-align: center;
+  margin: .5em;
+}
+
+@media all and (max-width: 600px) {
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+.container {
+  padding: 0 1em;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+p, ol {
+  padding: 0 50px;
+  margin-bottom: 1em;
+}
+
+@media all and (max-width: 600px) {
+  p, ol{
+    padding: 0 25px;
+  }
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  margin-bottom: 1rem;
+}
+
+.blackout {
+  background-color: #000;
+  width: 100%;
+  height: 300px;
+  display: block;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.top-secret {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  font-size: 2rem;
+  color: #333;
+  text-align: center;
+  text-transform: uppercase;
+  display: block;
+  transform: translate(-50%, -55%) rotate(-20deg);
+  -webkit-transform: translate(-50%, -55%) rotate(-20deg);
+}
+
+sup {
+  position: relative;
+  top: 3px;
+  font-size: .6em;
+  text-decoration: underline;
+}
+
+.amp {
+  display: block;
+  font-style: italic;
+  font-size: 1.1em;
+  padding: 0 .1em;
+  font-family: Baskerville, palatino linotype, serif;
+}
+
+@media all and (min-width: 600px) {
+  .amp {
+    display: inline;
+  }
+}
+
+.final-salutation {
+  font-size: 1.6rem;
+  padding: 0 5px;
+  text-align: center;
+}
+
+footer {
+  margin: 1rem 0;
+  text-align: center;
+}
+
+footer .heart {
+  font-size: 2rem;
+  color: red;
+  padding: 0 1rem;
+}
+
+/*
+ * Animation Sizing
+ */
+
+.spicers-frame { height: 480px; }
+.crazy-frame { height: 350px; }
+.cool-kids-frame { height: 500px; }
+.vertical-dorks-frame { height: 500px; }
+.horizontal-dorks-frame { height: 400px; }
+.frankenmuth-frame { height: 400px; }
+
+
+@media all and (max-width: 600px) {
+  .spicers-frame { height: 275px; }
+  .cool-kids-frame { height: 400px; }
+  .vertical-dorks-frame { height: 400px; }
+  .horizontal-dorks-frame { height: 250px; }
+}
+
+/*
+ *
+ *  Begin CSS Animation Hell
+ *  Beware All Ye Who Enter
+ *
+ */
+.gif {
+  position: relative;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.gif img {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  height: 100%;
+  width: auto;
+  max-width: 1000px;
+  animation: gif 5s linear 0s infinite;
+  -webkit-animation: gif 5s linear 0s infinite;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+}
+
+.gif .frame {
+  position: relative;
+  left: -10%;
+  width: 120%;
+  background: #fff;
+}
+
+
+.frames-2 img {
+  animation-name: gif-2;
+  -webkit-animation-name: gif-2;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+}
+
+.frames-3 img {
+  animation-name: gif-3;
+  -webkit-animation-name: gif-3;
+  animation-duration: 3s;
+  -webkit-animation-duration: 3s;
+}
+
+.frames-4 img {
+  animation-name: gif-4;
+  -webkit-animation-name: gif-4;
+  animation-duration: 4s;
+  -webkit-animation-duration: 4s;
+}
+
+.frames-5 img {
+  animation-name: gif-5;
+  -webkit-animation-name: gif-5;
+  animation-duration: 3s;
+  -webkit-animation-duration: 3s;
+}
+
+.frames-6 img {
+  animation-name: gif-6;
+  -webkit-animation-name: gif-6;
+  animation-duration: 6s;
+  -webkit-animation-duration: 6s;
+}
+
+/*
+ * Animation Delays
+ */
+.frames-2 .frame-2 { animation-delay: 0.5s; -webkit-animation-delay: 0.5s; }
+
+.frames-3 .frame-2 { animation-delay: 1.0s; -webkit-animation-delay: 1.0s; }
+.frames-3 .frame-3 { animation-delay: 2.0s; -webkit-animation-delay: 2.0s; }
+
+.frames-4 .frame-2 { animation-delay: 1.0s; -webkit-animation-delay: 1.0s; }
+.frames-4 .frame-3 { animation-delay: 2.0s; -webkit-animation-delay: 2.0s; }
+.frames-4 .frame-4 { animation-delay: 3.0s; -webkit-animation-delay: 3.0s; }
+
+.frames-5 .frame-2 { animation-delay: 0.6s; -webkit-animation-delay: 0.6s; }
+.frames-5 .frame-3 { animation-delay: 1.2s; -webkit-animation-delay: 1.2s; }
+.frames-5 .frame-4 { animation-delay: 1.8s; -webkit-animation-delay: 1.8s; }
+.frames-5 .frame-5 { animation-delay: 2.4s; -webkit-animation-delay: 2.4s; }
+
+.frames-6 .frame-2 { animation-delay: 1.0s; -webkit-animation-delay: 1.0s; }
+.frames-6 .frame-3 { animation-delay: 2.0s; -webkit-animation-delay: 2.0s; }
+.frames-6 .frame-4 { animation-delay: 3.0s; -webkit-animation-delay: 3.0s; }
+.frames-6 .frame-5 { animation-delay: 4.0s; -webkit-animation-delay: 4.0s; }
+.frames-6 .frame-6 { animation-delay: 5.0s; -webkit-animation-delay: 5.0s; }
+
+/*
+ * Keyframes
+ */
+@keyframes gif-2 {
+  0%   { z-index: 0; }
+  50%  { z-index: 0; }
+  51%  { z-index: -1; }
+  100% { z-index: -1; }
+}
+@-webkit-keyframes gif-2 {
+  0%   { z-index: 0; }
+  50%  { z-index: 0; }
+  51%  { z-index: -1; }
+  100% { z-index: -1; }
+}
+
+@keyframes gif-3 {
+  0%   { z-index: 0; }
+  34%  { z-index: 0; }
+  35%  { z-index: -1; }
+  100% { z-index: -1; }
+}
+@-webkit-keyframes gif-3 {
+  0%   { z-index: 0; }
+  34%  { z-index: 0; }
+  35%  { z-index: -1; }
+  100% { z-index: -1; }
+}
+
+@keyframes gif-4 {
+  0%   { z-index: 0; }
+  25%  { z-index: 0; }
+  26%  { z-index: -1; }
+  100% { z-index: -1; }
+}
+@-webkit-keyframes gif-4 {
+  0%   { z-index: 0; }
+  25%  { z-index: 0; }
+  26%  { z-index: -1; }
+  100% { z-index: -1; }
+}
+
+@keyframes gif-5 {
+  0%   { z-index: 0; }
+  21%  { z-index: 0; }
+  22%  { z-index: -1; }
+  100% { z-index: -1; }
+}
+@-webkit-keyframes gif-5 {
+  0%   { z-index: 0; }
+  21%  { z-index: 0; }
+  22%  { z-index: -1; }
+  100% { z-index: -1; }
+}
+
+@keyframes gif-6 {
+  0%   { z-index: 0; }
+  17%  { z-index: 0; }
+  18%  { z-index: -1; }
+  100% { z-index: -1; }
+}
+@-webkit-keyframes gif-6 {
+  0%   { z-index: 0; }
+  17%  { z-index: 0; }
+  18%  { z-index: -1; }
+  100% { z-index: -1; }
+}
