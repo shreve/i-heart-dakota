@@ -20,7 +20,7 @@ h1, .top-secret {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 4rem;
   text-align: center;
   margin: .5em;
 }
@@ -34,9 +34,19 @@ h1 {
 .container {
   padding: 0 1em;
   width: 100%;
+  overflow-x: hidden;
+}
+
+.container p,
+.container ol,
+.container .gif,
+.container .blackout {
   max-width: 600px;
   margin: 0 auto;
-  overflow-x: hidden;
+  display: block;
+
+  margin-bottom: 2em;
+  margin-top: 1em;
 }
 
 p, ol {
@@ -94,19 +104,12 @@ sup {
   font-style: italic;
   font-size: 1.1em;
   padding: 0 .1em;
-  font-family: Baskerville, palatino linotype, serif;
 }
 
 @media all and (min-width: 600px) {
   .amp {
     display: inline;
   }
-}
-
-.final-salutation {
-  font-size: 1.6rem;
-  padding: 0 5px;
-  text-align: center;
 }
 
 footer {
